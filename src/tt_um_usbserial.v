@@ -46,10 +46,10 @@ module tt_um_urish_usbserial (
     .reset      (~rst_n),
 
     // pins - these must be connected properly to the outside world.  See below.
-    .usb_p_tx(uio_in[0]),
-    .usb_n_tx(uio_in[1]),
-    .usb_p_rx(uio_out[0]),
-    .usb_n_rx(uio_out[1]),
+    .usb_p_tx(uio_out[0]),
+    .usb_n_tx(uio_out[1]),
+    .usb_p_rx(uio_in[0]),
+    .usb_n_rx(uio_in[1]),
     .usb_tx_en(usb_tx_en),
 
     // uart pipeline in
